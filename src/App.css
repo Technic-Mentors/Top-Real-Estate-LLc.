@@ -1,0 +1,454 @@
+@import url('https://fonts.googleapis.com/css2?family=Aleo:ital,wght@0,100..900;1,100..900&family=Cinzel:wght@400..900&family=Noto+Nastaliq+Urdu:wght@400..700&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Aleo:ital,wght@0,100..900;1,100..900&family=Cinzel:wght@400..900&family=Noto+Nastaliq+Urdu:wght@400..700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Aleo:ital,wght@0,100..900;1,100..900&family=Cinzel:wght@400..900&family=Jost:ital,wght@0,100..900;1,100..900&family=Noto+Nastaliq+Urdu:wght@400..700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+/* general css */
+:root {
+  /* --primary-color: #021e35; */
+  --primary-color: #0D63AA;
+  /* --secondary-color: #99914d; */
+  --secondary-color: #F05A5E;
+}
+
+h6 {
+  color: var(--secondary-color) !important;
+  text-transform: uppercase;
+}
+
+h1 {
+  color: var(--primary-color) !important;
+  text-transform: capitalize;
+}
+
+.py-6 {
+  padding: 180px 0;
+}
+
+@media (max-width:600px) {
+  .py-6 {
+    padding: 80px 0 !important;
+  }
+}
+
+.py-7 {
+  padding: 120px 0;
+}
+
+html {
+  overflow-x: hidden;
+}
+
+body {
+  overflow-x: hidden;
+  font-family: "Poppins", sans-serif !important;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Jost", sans-serif;
+  /* font-family: "Cinzel", serif; */
+}
+
+.btn {
+  background-color: var(--secondary-color) !important;
+  border: none !important;
+  color: white !important;
+}
+
+/* topbar */
+.topBar {
+  background-color: var(--secondary-color);
+  color: white;
+}
+
+/* allPageHeader */
+.allPageHeaderBg {
+  background-image: url(./assets/page&testiBg.avif);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: bottom;
+}
+
+.allPageHeaderBg-overlay {
+  background-color: rgba(0, 0, 0, .6);
+}
+
+/* home */
+.homeNavbar {
+  background-color: transparent;
+}
+
+.homeNavbar .toggleBtn {
+  background-color: white !important;
+}
+
+.homeNavbar a,
+.homeNavbar .navBrand {
+  color: white !important;
+}
+
+.realEstateLogo {
+  width: 270px;
+}
+
+@media (max-width:600px) {
+  .realEstateLogo {
+    width: 220px;
+  }
+}
+
+.navbarBg {
+  background-color: white;
+}
+
+.navLink {
+  font-size: 18px !important;
+}
+
+.navbarBg .navLink {
+  position: relative;
+  color: initial;
+}
+
+.homeNavbar .navLink {
+  position: relative;
+  color: white !important;
+}
+
+@media (min-width:768px) {
+  .navbarBg .navLink:hover::before {
+    content: "";
+    position: absolute;
+    background-color: var(--primary-color);
+    height: 1px;
+    width: 70%;
+    bottom: 3%;
+  }
+
+  .navbarBg .active::before {
+    content: "";
+    position: absolute;
+    background-color: var(--primary-color);
+    height: 1px;
+    width: 70%;
+    bottom: 3%;
+  }
+
+  .homeNavbar .navLink:hover::before {
+    content: "";
+    position: absolute;
+    background-color: var(--secondary-color);
+    height: 1px;
+    width: 70%;
+    bottom: 3%;
+  }
+
+  .homeNavbar .active::before {
+    content: "";
+    position: absolute;
+    background-color: var(--secondary-color);
+    height: 1px;
+    width: 70%;
+    bottom: 3%;
+  }
+}
+
+.homeHeader3 {
+  background-image: url(./assets/homeHeader1.avif);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: top;
+}
+
+.homeHeader2 {
+  background-image: url(./assets/page&testiBg.avif);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.homeHeader1 {
+  background-image: url(./assets/homeHeader3.avif);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+@media (min-width:700px) {
+  .homeHead {
+    font-size: 60px;
+  }
+}
+
+@media (max-width:700px) {
+  .img1 {
+    width: 100%;
+  }
+
+  .img2,
+  .img3,
+  .img4 {
+    display: none;
+  }
+}
+
+.homeHeader-overlay {
+  background-color: rgba(0, 0, 0, .5);
+}
+
+li {
+  line-height: 2.1rem;
+}
+
+.missionImg {
+  background-image: url(./assets/m&sBg.avif);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.mission-vision-overlay {
+  background-color: #0D63AA;
+  opacity: 0.9;
+  color: white;
+}
+
+.visionImg {
+  background-image: url(./assets/vissionImg.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.coreValues .card {
+  box-shadow: 0 7px 12px #F05A5E;
+  position: relative;
+  overflow: hidden;
+  border: none;
+}
+
+.coreValues .card::before {
+  content: "";
+  position: absolute;
+  background-color: #F05A5E;
+  bottom: -6px;
+  right: -8px;
+  width: 60px;
+  height: 60px;
+  border-radius: 50px;
+}
+
+.coreValues .card::after {
+  content: "";
+  position: absolute;
+  background-color: #F05A5E;
+  top: 0;
+  left: 0;
+  transform: scale(0);
+  width: 100%;
+  height: 100%;
+  transition: 0.5s ease;
+  transform-origin: bottom right;
+  border-radius: 5px;
+}
+
+.coreValues .card:hover::after {
+  transform: scale(1);
+}
+
+.coreValues .card:hover .card-body {
+  z-index: 3;
+  color: white;
+}
+
+.coreValuesIcon {
+  font-size: 40px !important;
+  color: var(--secondary-color);
+  margin-bottom: 8px;
+}
+
+.coreValues .card:hover .coreValuesIcon {
+  color: white;
+}
+
+.choseListIcon {
+  color: var(--secondary-color);
+}
+
+/* about */
+.aboutServices .card {
+  border: none;
+}
+
+.serviceIcon {
+  font-size: 40px !important;
+  margin-right: 20px;
+  color: var(--secondary-color);
+}
+
+.aboutServices .serviceContent {
+  position: relative;
+}
+
+.aboutServices .serviceContent::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  background-color: var(--secondary-color);
+  width: 100%;
+  height: 2px;
+}
+
+/* services */
+/* team */
+.teamBg {
+  background-image: url(./assets/m&sBg.avif);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.team-overlay {
+  background-color: #0D63AA;
+  opacity: 0.94;
+}
+
+.teamCol {
+  margin-top: 20px !important;
+}
+
+@media (min-width:670px) {
+  .team-overlay .justify-content-center {
+    padding: 0 35px;
+  }
+}
+
+.member-info h1 {
+  color: white !important;
+  font-size: 1.1rem;
+  text-align: center;
+  margin-top: 20px;
+}
+
+.member-info h2 {
+  color: var(--secondary-color);
+  font-size: 17px;
+  text-align: center;
+}
+
+/* testomonial */
+.slider-container-testi {
+  padding: 50px 0;
+}
+
+.testimonialCard {
+  position: relative;
+  width: 80% !important;
+  margin-left: 10%;
+  box-shadow: 0 0 20px #F05A5E;
+}
+
+@media (max-width:600px) {
+  .testimonialCard {
+    width: 100% !important;
+    margin-left: 0;
+  }
+}
+
+.quoteRight,
+.quoteLeft {
+  position: absolute;
+  right: 2%;
+  background-color: var(--primary-color);
+  color: white;
+  padding: 20px;
+  border-radius: 50px;
+  bottom: -10%;
+}
+
+.quoteRight {
+  right: 2%;
+  bottom: -10%;
+}
+
+.quoteLeft {
+  left: 2%;
+  top: -10%;
+}
+
+.testimonialImg {
+  margin-top: -50px;
+  height: 100px;
+  border-radius: 50px;
+  border: 5px solid var(--primary-color);
+}
+
+.slick-slide {
+  overflow: visible !important;
+}
+
+.slick-list {
+  overflow: visible !important;
+}
+
+/* callToAction */
+.callAction {
+  box-shadow: 0 0 20px #F05A5E;
+}
+
+/* contact */
+.contactIcon {
+  font-size: 25px !important;
+  color: var(--secondary-color);
+}
+
+.contactCard {
+  border-radius: 15px !important;
+  box-shadow: 0 0 4px #F05A5E;
+  border: none !important;
+  /* border: 1px solid var(--secondary-color) !important; */
+}
+
+.contactCard p {
+  font-size: 18px;
+  margin: 0;
+}
+
+/* footer */
+.footer {
+  background-color: var(--primary-color);
+  color: white;
+}
+
+.footerBottom {
+  background-color: var(--secondary-color);
+  text-align: center;
+  padding: 10px 0;
+}
+
+.siteLInks a {
+  background-color: transparent !important;
+  color: white !important;
+  border: none;
+}
+
+/* tabs */
+.nav-tabs .nav-link:not(.active) {
+  color: var(--secondary-color);
+  font-weight: bold;
+  border: 1px solid white !important;
+}
+
+.whatsaapIcon a {
+  position: fixed;
+  bottom: 8%;
+  right: 3%;
+  width: 60px;
+  height: 60px;
+  color: green;
+  font-size: 40px;
+  background-color: white;
+  border-radius: 100%;
+}
