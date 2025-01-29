@@ -31,7 +31,7 @@ export default function Footer() {
             </Col>
             <Col md={3}>
               <h3 className="text-white">Contact Info</h3>
-              <p><FontAwesomeIcon icon={faMobileAlt} className="me-4" />+971 50 7798535</p>
+              <p><FontAwesomeIcon icon={faMobileAlt} className="me-4" />+971 26 747 250</p>
               <div className="d-flex align-items-start">
                 <FontAwesomeIcon icon={faEnvelope} className="me-4" /><p>info@toprealestatellc.com</p>
               </div>

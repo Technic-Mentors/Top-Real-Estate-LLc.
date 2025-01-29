@@ -17,7 +17,7 @@ export default function Topbar() {
                   info@toprealestatellc.com</p>
                 <p style={{ margin: "0" }}>
                   <PhoneIphoneOutlined className="me-2" />
-                  +971 50 7798535</p>
+                  +971 26 747 250</p>
               </div>
             </Col>
             <Col md={3} className="d-flex justify-content-end">
